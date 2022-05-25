@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Dashing-font";
+    src: url("./font/dashing.ttf");
+}
+
+body {
+    font-family: "Dashing-font";
+}
+.login-card {
+    justify-content: center;
+    padding: 20px;  
+    margin-top: 10% !important;
+    margin-left: 30%;
+}
+
+.section-body {
+    margin-top: 56px;
+}
+.centerText {
+    justify-content:center;
+    align-items: center;
+    
+}
+.img-div {
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.img-div img {
+    position: absolute;
+    width: 120px;
+    bottom: -90px;
+}
+
+@media screen and (max-width: 990px) {
+    .img-div {
+        margin-left: 0px;
+    }
+
+    .img-div img {
+        width: 60px;
+        bottom: -27px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+.link-style {
+    color: white;
+    margin: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.link-style:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.link-style-active {
+    transform: scale(1.1, 1.1);
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #9b7cff;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+
+.link-style-active:hover {
+    color: white;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+#mint .background {
+    width: 100vw;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    position: relative;
+}
+
+#mint .background img {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0px;
+    z-index: -1;
+    object-fit: none;
+    height: calc(100vh - 56px);
+    min-width: 100vw;
+}
+
+.ancient-style {
+    font-weight: bold;
+}
+
+#about {
+    padding: 100px 0px;
+}
+
+.cat-part {
+    border-radius: 20px;
+    width: 100%;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.cat-part img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.cat-part:hover {
+    background-color: black;
+    color: white;
+}
+
+#features {
+    padding: 50px 0px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 756px) {
+    #features {
+        padding: 0px 15px;
+    }
+}
+
+.trait-name {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cat-item {
+    cursor: pointer;
+}
+
+.glow-on-hover {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.smallbtn {
+    width: 80px;
+    color: #ffd700;
+}
+.count {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.mintbutton {
+    color: #ffd700;
+    margin-top: 20px;
+}
+.whitelister {
+    color: rgb(241, 160, 160);
+    margin-bottom: 10px;
+}
+.mintprice {
+    color: rgb(241, 160, 160);
+    margin-top: 10px;
+}
+.mint_available {
+    color: #7878ef;
+    font-size: 23px;
+}
+#team {
+   text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#faq {
+    text-align: center;
+    background-color: gainsboro;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#rarity {
+    background-color: gainsboro;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#OwnerImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#rarity h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rarity-img {
+    border-radius: 50px;
+}
+.d-flex.p-3.mb-2.bg-danger.text-white:hover{
+    background-color: #ff00c8 !important;
+
+}
